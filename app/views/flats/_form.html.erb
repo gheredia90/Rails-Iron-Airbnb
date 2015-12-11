@@ -1,0 +1,15 @@
+<h3>Enter required info</h3>
+
+<%= form_for [ @flat] do |f| %>
+  <p>
+    <%= f.label :title, "Title:" %><br/>
+    <%= f.text_field :title%>
+  </p>
+  <p>
+    <%= f.label :price, "Price:" %><br/>
+    <%= f.number_field :price %>
+  </p>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>
